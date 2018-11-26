@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PHP</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+	<h2>Bons de commande</h2>
+
+	<a href="http://localhost/developpement/exercices_0310/orders.php">Retourner à l'accueil</a>
+
+	<div class="contactadress">
+		<h1><strong><?= $orderdetails[0]['customerName'] ?></strong></h1>
+		<h2><strong><?= $orderdetails[0]['contactLastName'] ?> <?= $orderdetails[0]['contactFirstName'] ?></strong></h2>
+		<p><?= $orderdetails[0]['addressLine1'] ?></p>
+		<p><?= $orderdetails[0]['city'] ?></p>
+	</div>
+	<h2>Bon de commande n°<?= $ordernumber ?></h2>
+	<table>
+	<tr>
+		<td class="thead">Produit</td>
+		<td class="thead">Prix Unitaire</td>
+		<td class="thead">Quantité</td>
+		<td class="thead">Total</td>				
+	</tr>
+	<?php foreach ($orderdetails as $index => $orderdetail) { ?>
+		<tr>
+			<td><?= $orderdetail['productName'] ?></a></td>
+			<td><?= $orderdetail['priceEach'] ?>€</td>
+			<td><?= $orderdetail['quantityOrdered'] ?></td>
+			<td><?= round($orderdetail['Total'],2) ?>€</td>
+		</tr>
+	<?php } ?>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Montant Total HT</td>
+			<td> <?= $toto ?> €</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Montant TVA</td>
+			<td> <?= $toto*0.2 ?> €</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Montant TTC</td>
+			<td> <?= $toto*1.2 ?> €</td>
+		</tr>
+	</table>
+</body>
+</html>

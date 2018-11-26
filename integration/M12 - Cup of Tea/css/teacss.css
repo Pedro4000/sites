@@ -1,0 +1,743 @@
+*{
+  box-sizing: border-box;
+  word-wrap: break-word;
+  }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  margin: 0;
+  background-color: #eee;
+  line-height: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+a,
+p,{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  font-family: 'Amaranth', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+::selection{
+  background-color: hotpink;
+  color:white;
+}
+
+.container{
+ max-width: 1100px;
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+
+/********* Header*************/
+
+.header-main{
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-color: #98b00e ;
+  color: white;
+  padding-bottom: 25px;
+}
+
+
+.strip{
+  background-color: rgba(256,256,256,0.1);
+  text-align: center;
+  margin-top: 0;
+  padding:4px;
+}
+
+.ribbon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+}
+
+.logo-img{
+  width: 30%;
+}
+
+.main-links{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fa-shopping-cart{
+  padding:15px;
+  border:1px solid #ccc;
+  color: #ccc;
+  margin: 8px;
+  border-radius: 50%;
+}
+
+.header-main nav{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content:space-between;
+  text-transform: uppercase;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header-main nav a{
+  padding: 6px 12px;
+}
+
+
+.active{
+  background-color: rgba(256, 256, 256, 0.2);
+}
+
+/*******MAIN********/
+
+main{
+  text-align: center;
+
+}
+
+.main-info{
+  color: #97ae06;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.detail-offer{
+  color: grey;
+  font-size: 12px;
+}
+
+/******DRINKS ******/
+
+.drinks{
+    background-color: white;
+    padding: 20px 10px 10px 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.line:before, .line:after {
+  content:'';
+  width:25%;
+  border-bottom: 1px #97ae06 solid;
+  display:inline-block;
+  vertical-align:middle;
+}
+.line:before {
+margin-right:5px}
+.line:after {
+margin-left:5px;}
+
+.drinks-title{
+  font-size: 2em;
+  width: 100%;
+  color: #97ae06;
+  font-weight: normal;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  }
+
+.drinks ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.drinks ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Amaranth', sans-serif;
+  color: #6e6e6e;
+  width: 20%;
+}
+
+ .titre-home{
+   font-size: 1em;
+ }
+
+
+/****PRODUCTS******/
+
+.products{
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: #6e6e6e;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+
+.products-title{
+  font-size: 1.4em;
+  color: #97ae06;
+  text-align: center;
+  font-weight: normal;
+  display: flex;
+  width: 100%;
+  justify-content :center;
+  align-items: center;
+}
+
+
+
+.products-article{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: normal;
+}
+
+.products-article p:nth-of-type(2){
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+strong{
+  font-size: 1.2em;
+  padding-right: 10px;
+}
+
+.products-cta{
+  background-color: #b78a4b;
+  padding: 10px 20px;
+  margin-top: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:12px;
+  display: inline-block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/**PAGE PRODUCT MAIN*/
+
+.product-main{
+  color: #6e6e6e;
+  background-color: white;
+  padding: 20px;
+  }
+
+.product-main-title{
+margin-top:0;
+padding-top: 20px;
+font-weight: normal;
+}
+
+.media-main-top{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+select{
+  background-color: white;
+  padding: 10px 30px;
+  padding-right: auto;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #afafaf;
+}
+
+.ref{
+  text-align: left;
+}
+
+.yellow{
+  color: #f8e114;
+}
+
+.product-section-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-section-flex>img{
+  width: 50%;
+}
+
+.wanted{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.wanted-weight{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wanted-basket{
+  text-align: right;
+}
+
+.fa-heart{
+  color: red;
+}
+
+.product-main p{
+  text-align: left;
+}
+
+.green{
+  color: #97ae06;
+}
+
+/*LISTING MAIN*/
+
+.listing-main{
+  background-color: #eee;
+}
+
+.tea-families{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: #6e6e6e;
+  overflow: hidden;
+}
+
+.listing-exemple{
+  float: left;
+  padding-top: 20px;
+}
+
+.tea-families h2{
+ padding-top: 30px;
+ color: #95ad0e;
+ text-align: left;
+}
+
+.tea-families>p{
+  text-align: left;
+}
+
+.tea-families h3,
+.tea-families h2{
+  font-weight: normal;
+}
+
+
+.list-items{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.line-listing:after {
+  content:'';
+  width:62%;
+  border-bottom: 1px #97ae06 solid;
+  display:inline-block;
+  vertical-align:middle;
+}
+.line-listing:before {
+margin-right:5px}
+.line-listing:after {
+margin-left:5px;}
+
+
+/****ABOUT MAIN *****/
+
+.body-about{
+  background-color: #eee;
+}
+
+.about-articles{
+  background-color:white;
+  padding: 15px;
+}
+
+.about-img{
+  float: left;
+  padding: 10px 15px;
+}
+
+.about-img-2{
+  float: right;
+  padding: 10px 15px;
+}
+
+.about-main-title{
+  text-align: left;
+  font-weight: normal;
+  padding-left: 20px;
+  color: #6d6d6d;
+}
+
+.about-article-title{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.about-item-article{
+    overflow: hidden;
+}
+
+.about-item-article p{
+  text-align: left;
+  padding-left: 15px;
+
+}
+.about-articles p{
+  text-align:left;
+  padding-left: 15px;
+}
+
+.about-social{
+  text-align: center;
+  width: 90%;
+  background-color :#e7eebc;
+  margin-left:auto;
+  margin-right: auto;
+  padding: 15px;
+  color: #6d6d6d;
+  display: flex;
+  justify-content: space-between;
+  align-items:
+}
+
+.about-social-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%
+}
+
+/********* FOOOTER MAIN********/
+
+.footer-main{
+  background-color: #97ae06;
+}
+
+.footer-payment{
+  background-color: rgba(56,56,56,0.1);
+}
+
+.footer-links{
+width: 100%;
+color: #d9d9d9;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding-top: 25px;
+padding-bottom: 25px;
+font-size: 1.3em;
+}
+
+.footer-links li{
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  text-transform: uppercase;
+  font-size: 12px;
+
+}
+
+.footer-links i{
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.fa-phone,
+.fa-truck{
+  transform: scaleX(-1);
+}
+
+.directory{
+  display: flex;
+  justify-content: space-around;
+  color: #d9d9d9;
+}
+
+.directory-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.Upperdirec{
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.checkout{
+  transition: 300ms;
+  background-color: rgba(0,0,0,0.8);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: -2;
+  opacity: 0;
+}
+
+.checkout-inner{
+background-color: white;
+height: 80vh;
+width: 80vw;
+}
+
+.checkout-is-showing{
+  z-index: 99;
+  opacity: 1;
+  }
+
+@media screen and (max-width: 800px){
+
+  .container{
+    width: 100%;
+  }
+
+  .containertablet{
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  .basket{
+    display: flex;
+    align-items: center;
+  }
+
+  .drinks{
+    flex-wrap: wrap;
+
+  }
+
+  .drinks ul{
+    justify-content: space-around;
+  }
+
+  .drinks ul li{
+    width: 50%
+  }
+
+  .products{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products-article{
+    width: 100%;
+  }
+
+  .align-title{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .godown{
+    margin-top: auto;
+  }
+
+
+
+  /****LISTING MAIN*****/
+
+  .listing-exemple{
+    display: none;
+  }
+
+  .tea-families{
+    padding: 20px;
+  }
+  .list-items{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tea{
+    width: 55%;
+  }
+
+  /****ABOUT MAIN****/
+
+  .about-social{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .about-social-article{
+    width: 90%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 600px){
+
+
+  /*header*/
+
+  .ribbon{
+    display: none;
+  }
+
+  .basketspan{
+    display: none;
+  }
+
+  /* main*/
+
+  .main-links{
+
+  }
+
+  .basket{
+    position:absolute;
+    position: fixed;
+    background-color: #97ae06;
+    top: 5%;
+    left: -2%;
+    padding: 0px;
+    border: 1px solid grey;
+    border-left: 0;
+    box-shadow: 1px 1px 6px #555;
+    border-radius: 0px 40px 40px 0px;
+    display: block;
+  }
+
+  .main-links{
+    justify-content: center;
+  }
+
+  .logo-img{
+    width: 58%;
+    margin-top: 60px;
+
+  }
+
+  .header-main nav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-main nav a{
+    padding: 8px 20px;
+  }
+
+  /*footer*/
+
+  .footer-links{
+    justify-content:
+    space-around;
+    flex-wrap: wrap;
+
+  }
+
+  .footer-links li{
+    width: 50%;
+    padding :12px;
+  }
+
+  .directory{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .directory ul li{
+    padding: 8px;
+  }
+
+
+  /***PRODUCT MAIN*****/
+
+  .product-section-flex{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .product-section-flex >img,
+  .wanted{
+    width: 90%;
+  }
+
+  .wanted-weight,
+  .wanted-basket{
+    text-align: right;
+    align-items: flex-end;
+    margin-top: 15px;
+  }
+  .wanted-basket p{
+    text-align: center;
+  }
+
+
+  .tea{
+    width: 95%;
+  }
+
+
+  /***LISTING MAIN***/
+
+  /*****ABOUT MAIN****/
+
+  .about-main-title{
+    font-size: 35px;
+  }
+
+  .about-img,
+  .about-img-2{
+    display: block;
+    width: 100%
+  }
+
+.directory{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}

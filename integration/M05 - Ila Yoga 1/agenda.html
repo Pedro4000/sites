@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+  <head>
+    <title>ila yoga</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display" rel="stylesheet">
+  <link href="yoga.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav header-item">
+        <ul class="menu-list">
+          <li class="item-nav">
+            <a href="#"> <i class="fas fa-calendar-alt item list"></i> Agenda</a>
+          </li>
+          <li class="item-nav">
+            <a href="#"><i class="fas fa-book"></i> Livre d'Or</a>
+          </li>
+          <li class="item-nav">
+            <a href="#"><i class="far fa-image"></i>Album Photo</a>
+          </li>
+          <li class="item-nav">
+            <a href="#"><i class="fas fa-envelope"></i>Nous contacter</a>
+          </li>
+        </ul>
+      </nav>
+        <p class="offer header-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem.</p>
+        <a href="index.html"><h1 class="site-title header-item">Bienvenue sur le site d'Ila yoga </h1></a>
+    </header>
+    <main>
+      <h2 style="font-weight:normal;text-align:center"> Réservez votre place pour le prochain cours de Yoga du rire </h2>
+      <section class="container">
+        <table class="agenda-table">
+          <thead>
+            <tr>
+              <th colspan="3" style="background-color:rgba(200,142,210,1)">Yoga du rire avec Jacqueline (Paris)</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>20 Janvier 2016</th>
+              <th>16h30</th>
+              <th>réserver ce créneau</th>
+          </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <th>05 Janvier 2016</td>
+              <td>15h30</td>
+              <td>réserver ce créneau</td>
+            </tr>
+            <tr>
+              <th>10 Janvier 2016</th>
+              <td>16h30</td>
+              <td>réserver ce créneau</td>
+            </tr>
+            <tr>
+              <th>15 Janvier 2016</th>
+              <td>15h30</td>
+              <td>réserver ce créneau</td>
+            </tr>
+        </table>
+        <p></p>
+          <table class="agenda-table">
+            <thead>
+              <tr>
+                <th colspan="3" style="background-color:rgba(200,142,210,1)">Yoga du rire avec Jacqueline (Paris)</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>20 Janvier 2016</th>
+                <td>16h30</td>
+                <td>réserver ce créneau</td>
+            </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <th>05 Janvier 2016</th>
+                <td>15h30</td>
+                <td>réserver ce créneau</td>
+              </tr>
+              <tr>
+                <th>10 Janvier 2016</th>
+                <td>16h30</td>
+                <td>réserver ce créneau</td>
+              </tr>
+              <tr>
+                <th>15 Janvier 2016</th>
+                <td>15h30</td>
+                <td>réserver ce créneau</td>
+              </tr>
+              <tr>
+                <th>05 Janvier 2016</th>
+                <td>15h30</td>
+                <td>réserver ce créneau</td>
+              </tr>
+              <tr>
+                <th>10 Janvier 2016</th>
+                <td>16h30</td>
+                <td>réserver ce créneau</td>
+              </tr>
+              <tr>
+                <th>15 Janvier 2016</th>
+                <td>15h30</td>
+                <td>réserver ce créneau</td>
+              </tr>
+          </table>
+          <p></p>
+      </section>
+      <p></p>
+      <form method="Post" action="index.html">
+        <fieldset>
+          <legend> Vos coordonnées </legend>
+          <label>Votre prénom : </label>
+            <input type="text" placeholder="Johnny" name="prenom" value="toto">
+          <label>Votre nom : </label>
+            <input type="text" placeholder="Halliday" name="name">
+          <label>Votre mail : </label>
+            <input type="email" placeholder="Mail" name="name" required>
+            <input type=submit value="OK">
+        </fieldset>
+        <fieldset>
+              <legend> Les raisons de votre venue</legend>
+              <label for="reason-relax">Besoin de me détendre</label>
+                <input type="checkbox" name="reason-relax" id="reason-relax">
+              <label for="doctor">Mon médecin</label>
+                <input type="checkbox" name="doctor" id="doctor">
+              <label for="friends">Vos Amis</label>
+                <input type="checkbox" name="friends" id="friends" >
+                <input type=submit value="OK">
+        </fieldset>
+        <fieldset>
+          <legend> Voulez vous souscrire ?</legend>
+              <label for="reason-relax">oui</label>
+                <input type="radio" id="subscribe-no" name="subscribe" value="subscribe-yes">
+              <label for="reason-relax">Non</label>
+                <input type="radio" id="subscribe-yes" name="subscribe" value="subscribe-no">
+              <label for="reason-relax">Peut-être</label>
+                <input type="radio" id="subscribe-maybe" name="subscribe" value="subscribe-maybe">
+              <label for="reason-relax">Peut-être</label>
+                <input type="date" name="subscribe" value="subscribe-maybe">
+        </fieldset>
+        <fieldset>
+          <legend> Comment avez vous connu ila yoga</legend>
+              <select name="reputation">
+              <option value="internet">Par les internets</option>
+              <option value="friends">Par les amis</option>
+              <option value="family">Par la famille</option><br>
+            </select>
+        </fieldset>
+        <fieldset>
+          <textarea name="message"></textarea>
+        </fieldset>
+      </form>
+    </main>
+    <p></p>
+    <footer>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id iste rerum possimus, quasi, harum excepturi!</p>
+    </footer>
+    <div>
+    </body>
+</html>

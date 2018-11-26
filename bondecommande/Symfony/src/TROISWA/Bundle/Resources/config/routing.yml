@@ -1,0 +1,11 @@
+commande_homepage:
+    path:     /
+    defaults: { _controller: CommandeBundle:Default:index }
+
+
+commande_order:
+    path:      /order/{id}
+    defaults:
+        _controller: CommandeBundle:Default:order
+    requirements:
+        id: \d+

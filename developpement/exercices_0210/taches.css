@@ -1,0 +1,64 @@
+h1{
+	font-size: 3em;
+	color :red;
+}
+
+body{
+	background-color: #3777ab;
+	display: flex;
+	justify-content: center;
+}
+
+
+section-flex{
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 30px;
+}
+
+article{
+	margin: 30px;
+}
+
+fieldset{
+	margin:30px;
+}
+
+.main-section{
+
+	width:80%;
+}
+
+.container{
+	width: 80%;
+	background-color: #a9cfec;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+.priority{
+	display: flex;
+	justify-content: space-between;
+}
+
+input{
+	padding:12px;
+	width: 
+}
+
+label{padding-right: 8px}
+
+.tasks{
+	margin-left: 30px;
+}
+
+.tasklist{
+	padding: 15px;
+	border : 1px solid black;
+	background-color: blue;
+	display: inline-block;
+	width: 10%
+}
+

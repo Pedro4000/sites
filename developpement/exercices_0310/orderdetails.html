@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PHP</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+	<h2>Bons de commande</h2>
+
+	<a href="http://localhost/developpement/exercices_0310/orders.php">Retourner à l'accueil</a>
+
+	<div class="contact Adress">
+		<h1><strong>Vitachrome Inc.</strong></h1>
+		<h2><strong>Michael Frick</strong></h2>
+		<p>2678 KIngston Rd.</p>
+		<p>Suite 801</p>
+		<p>NYC</p>
+	</div>
+
+
+
+	<table>
+	<tr>
+		<td class="thead">Commande</td>
+		<td class="thead">Date de la commande</td>
+		<td class="thead">Date de livraison</td>
+		<td class="thead">Statut</td>				
+	</tr>
+	<?php foreach ($orders as $index => $order) { ?>
+		<tr>
+		<td><a href="orderdetails.php?id=<?= $order['orderNumber'] ?>"><?= $order['orderNumber'] ?></a></td>
+		<td><?= $order['orderDate'] ?></td>
+		<td><?= $order['shippedDate'] ?></td>
+		<td><?= $order['status'] ?></td>
+		</tr>
+
+	<?php } ?>
+	</table>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{% extends "CommandeBundle::layout.html.twig" %} 
+
+
+{% block title %}
+
+{% endblock %}
+
+
+{% block body %}
+
+<html lang="fr"><head>
+    <meta charset="utf-8">
+    <title>PHP</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+	<h2>Bons de commande</h2>
+
+	<h1>Liste des commandes</h1>
+
+
+	<table>
+	<tbody><tr>
+		<td class="thead">Commande</td>
+		<td class="thead">Date de la commande</td>
+		<td class="thead">Date de livraison</td>
+		<td class="thead">Statut</td>				
+	</tr>
+
+{# 	{% for advert in listAdverts %} #}
+      	<tr>
+{# 		<td class="thead"><a href="{{ path('commande_order', {'id': advert.orderNumber }) }}">{{ advert.orderNumber }}</td> #}
+{# 		<td class="thead">{{ listAdverts.orderDate|date("m/d/Y") }}</td>
+		<td class="thead">{{ advert.shippedDate|date("m/d/Y") }}</td> #}
+		<td class="thead">{{ listAdverts.status }}</td>	
+		</tr>
+{# 
+    {% endfor %} #}
+			<tr>
+			<td><a href="orderdetails.php?id=10100">10100</a></td>
+			<td>2003-01-06</td>
+			<td>2003-01-10</td>
+			<td>Shipped</td>
+		</tr>
+
+		<tr>
+			<td><a href="orderdetails.php?id=10101">10101</a></td>
+			<td>2003-01-09</td>
+			<td>2003-01-11</td>
+			<td>Shipped</td>
+		</tr>
+
+
+</body></html>
+
+{% endblock %}

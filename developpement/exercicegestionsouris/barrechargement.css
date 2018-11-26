@@ -1,0 +1,14 @@
+.barre{
+	border : 1px solid black;
+	height: 75px;
+	width: 800px;
+}
+
+.remplir {
+	height:75px;
+	background-color: red;
+}
+
+.vider{
+	background-color: white;
+}

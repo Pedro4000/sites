@@ -1,0 +1,57 @@
+    <main>
+        <!-- Chargement du template PHTML spécifié par le programme PHP -->
+        <!-- Page d'article de blog détaillé avec les commentaires -->
+<h2><i class="fa fa-file-text-o"></i> Article</h2>
+
+<!-- Article du blog -->
+<section class="post">
+    <h3><?= $articledetail[0]['Title'] ?></h3>
+    <article><?= $articledetail[0]['Content'] ?></article>
+    <small>
+        Rédigé par <?= $articledetail[0]['FirstName'] ?> <?= $articledetail[0]['LastName'] ?>        le 2018-10-12 16:38:53    </small>
+</section>
+
+<hr>
+
+
+
+<!-- Liste des commentaires de l'article du blog -->
+<ul class="comment-list">
+
+    <?php foreach ($comments as $comment) { ?>
+            <li class="comment">
+            <h4><i class="fa fa-comment"></i> Rédigé par <?= $comment['Pseudo'] ?></h4>
+            <article><?= $comment['Comment'] ?></article>
+        </li>
+    <?php } ?>
+    </ul>
+
+<hr>
+
+
+
+
+<!-- Formulaire de saisie d'un nouveau commentaire pour cet article -->
+<form class="generic-form" action="show_document.php?id=<?= $articleId?>" method="POST">
+
+    <!-- Utilisation d'un champ caché pour spécifier à quel article rattacher le commentaire -->
+    <input type="hidden" name="postId" value="<?= $articledetail[0]['Id'] ?>">
+
+    <fieldset>
+        <legend><i class="fa fa-comment-o"></i> Nouveau commentaire</legend>
+        <ul>
+            <li>
+                <label for="nickName">Pseudo :</label>
+                <input type="text" id="nickName" name="nickName">
+            </li>
+            <li>
+                <label class="textarea" for="contents">Commentaire :</label>
+                <textarea id="contents" name="contents" rows="5"></textarea>
+            </li>
+            <li>
+                <button class="button button-primary" type="submit">Ajouter</button>
+                <a class="button button-cancel" href="show_document">Annuler</a>
+            </li>
+        </ul>
+    </fieldset>
+</form>    </main>

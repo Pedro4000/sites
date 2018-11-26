@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="taches.css">
+    <title>taches</title>
+</head>
+<body>
+	<section class="container main-section">
+		<div class="tasks">
+			<h1 class="main-title">Gestionnaires de tâches :-)</h1>
+				<?php for ($j=0; $j < $longueurdonnes-1 ; $j++) { 
+				 ?>
+					<div>
+						<input type="checkbox" name=<"check"><p class="tasklist"><?= $titre[$j] ?></p>
+					</div>
+					<?php } ?>
+			<input type="reset" name="delete" value="Supprimer" class="cta">
+		</div>
+		<div>
+			<fieldset>
+				<form action="taches.php" method="post">
+				<legend>Information sur la tâche</legend>
+				<article class="sectionflex">
+				<label>Titre :</label>
+				<input type="text" name="titre">
+				</article>
+				<article class="sectionflex">
+				<label>Tâche :</label>
+				<input type="textarea" name="tes" class="big">
+				</article>
+				<article class="sectionflex">
+			        <label for="start">Début</label>
+			        <input type="date" id="start" name="trip"
+			               value="2018-07-22"
+			               min="2018-01-01" max="2021-12-31" />
+    			</article>
+    			<article class="sectionflex priority">
+    				<label>Priorité</label>
+					  <input type="radio" name="priority" value="Haute" checked>Haute
+					  <input type="radio" name="priority" value="Normale">Basse
+					  <input type="radio" name="priority" value="Basse"> Normale
+    			</article>
+    			<input type="submit" name="valid" class="cta">
+    		</form>
+			</fieldset>
+		</div>
+	</section>
+    <script src="taches.js"></script>
+</body>
+</html>

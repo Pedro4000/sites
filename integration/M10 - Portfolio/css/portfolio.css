@@ -1,0 +1,426 @@
+*{
+  box-sizing: border-box;
+  word-wrap: break-word;
+  }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  font-family: 'Bree Serif', serif;
+  line-height: 40px;
+  background-image: url(../img/fond.png);
+  color: grey;
+}
+
+h2,
+h3{
+  color:#df316c;
+  font-weight: normal;
+}
+
+@keyframes bounce{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity:0.5;
+    transform: translateY(-20px) scale(1.2) rotate(360deg);
+
+  }
+
+}
+
+.item-service:hover i{
+  animation-name:bounce;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+/**************** HEADER*****************/
+
+.header-main{
+  background-image:url(../img/fond.png);
+  color: (100,100,100,1)
+  text-align: center;
+  font-size: 1.5em;
+}
+.header-main nav{
+
+}
+
+.header-main nav a{
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: #8f8f8f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-main ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.header-main li{
+  color: #8f8f8f;
+  margin: 15px;
+  font-size: 1.5rem;
+}
+
+.logo{
+  text-align: center;
+}
+.logo-img{
+  width: 60%;
+}
+
+.logo a{
+  width: 5em;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.header-main .fas{
+  margin-bottom: 25px;
+}
+
+/*************** MAIN ************/
+
+
+/***********INTRO***********/
+
+.intro{
+  background-image: url(../img/bg_header.png);
+  background-color: rgba(0,0,0,1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  color: white;
+  text-align: center;
+  padding: 2.4em;
+}
+.intro-title{
+
+}
+.intro p{
+  margin : 60px 0;
+  color: white;
+}
+.intro a{
+  text-decoration: none;
+  color: white;
+  background-color: #df316c;
+  padding: 18px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+
+/********** SECTION DEUX ************/
+
+.container{
+  width: 90%;
+  max-width:1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.skills,
+.services{
+  color: #888;
+  padding: 20px;
+  width: 75%
+  }
+
+.section-title{
+  color: #df316c;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 30px;
+}
+
+.section-title:before, .section-title:after { content:''; display:inline-block; vertical-align: middle; width: 1rem; height: 3px; background: #df326b }
+.section-title:before { margin-right: .3rem }
+.section-title:after { margin-left: .3rem }
+
+.item-flex{
+  text-align: center;
+}
+
+.item-skill img{
+  width: 65%;
+}
+
+.title-skill{
+  color: #888;
+  }
+
+/*********** SECTION TROIS ***********/
+
+.services{
+  text-align: center;
+}
+
+.services .fas{
+  display: inline-block;
+  color: grey;
+  background-color: #ccc;
+  padding: 25px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+
+}
+
+.services p{
+  color: grey;
+}
+
+.services h3,
+.services p{
+  display: block;
+}
+
+.mini-cta{
+  color:#df316c;
+  text-decoration: none;
+  padding-left: 20px;
+}
+.service-title{
+  color: #df316c;
+}
+
+.item-works{
+  overflow: hidden;
+}
+
+
+/************SECTION QUATRE **************/
+
+fieldset{
+  border: 0px solid black;
+  text-align: center;
+}
+
+fieldset input{
+  width:100%;
+  margin: 15px;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: top 50% left 1%;
+  background-size: 50px;
+}
+
+.cta-grey,
+.cta-pink{
+  border-radius: 0;
+  width: 30%;
+  text-align: center;
+  color: white;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.cta-grey{
+  background-color: #888;
+}
+.cta-pink{
+
+  background-color: #df316c;
+}
+
+.input-name{
+  background-image: url(../img/bg_form_name.svg);
+  background-repeat: no-repeat;
+  padding-left: 60px;
+}
+
+
+.input-mail{
+  background-image: url(../img/bg_form_mail.svg);
+  padding-left: 60px;
+}
+.input-message{
+  background-image: url(../img/bg_form_message.svg);
+  background-position: top 50% left 0.5%;
+  padding-left: 60px;
+}
+
+
+/********** MODE TABLETTE ***********/
+
+@media screen and (min-width: 600px)
+{
+
+
+  /**INTRO TABLETTE**/
+  .header-main li{
+
+  }
+
+  .header-main ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo{
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  }
+
+  .logo img{
+  transition: 300ms;
+  }
+
+  .logo:hover img{
+  transform: matrix();
+  margin-right: 15px;
+  }
+
+  .logo:hover a{
+    color:#df316c;
+  }
+
+  nav a i{
+    transition: 300ms;
+  }
+
+  nav a:hover .fas{
+    color:#df316c;
+    transform: translateY(-10px);
+  }
+
+  li .logo{
+    padding: 0 200px;
+
+  }
+  .logo-img{
+    width: 30%;
+  }
+
+
+
+
+  /**SECTION DEUX TABLETTE**/
+
+  .skills{
+    width: 40%;
+  }
+
+  /**SECTION Trois TABLETTE**/
+
+  .services{
+    width: 90%;
+  }
+
+  /*****FORMULAIRE TABLETTE*****/
+
+  fieldset{
+    font-size: 0;
+  }
+
+
+
+  .input-name{
+    font-size: initial;
+    width: 50%;
+    float:left;
+    margin: 0;
+    padding-left: 60px;
+  }
+  .input-mail{
+    font-size: initial;
+    width: 50%;
+    float: right;
+    margin: 0;
+    padding-left: 60px;
+  }
+
+  .input-message{
+    font-size: initial;
+    margin: 0;
+    padding-left: 60px;
+  }
+
+
+
+
+}
+
+@media screen and (min-width: 800px)
+{
+.header-main nav a{
+  font-size: 1.5rem;
+  margin-left: 0;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.header-main .logo{
+  height: auto;
+  width: auto;
+  margin-right: auto;
+}
+
+.header-main ul:nth-child(1){
+
+}
+
+/**SECTION INTRO DESKTOP**/
+
+.skills,
+.services{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.section-title{
+  width: 100%;
+}
+
+.item-skill,
+.item-service{
+  width: 30%;
+}
+
+/**section TROIS DESKTOP***/
+
+article:nth-of-type(2n+1) .product-image{
+  float: right;
+  width: 50%;
+  margin-left: 20px;
+}
+
+article:nth-of-type(2n) .product-image{
+  float: left;
+  width: 50%;
+  margin-right: 20px;
+}
+
+}

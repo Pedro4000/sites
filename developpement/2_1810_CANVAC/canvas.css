@@ -1,0 +1,82 @@
+img{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body{
+	background-color: #b9e5e5;
+}
+
+#slate,
+#slate2{
+	box-shadow: 0 0 5px black;
+	background-color: white;
+}
+
+h2{
+	color:orange;
+}
+
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+h3{
+	color: red;
+	padding: 0 20px;
+}
+
+button{
+	margin: 0 20px;
+}
+
+.black{
+	background-color: black;
+
+}
+
+.brown{
+	background-color: brown;
+
+}
+
+.red{
+	background-color: red;
+
+}
+
+.yellow{
+	background-color: yellow;
+
+}
+
+.green{
+	background-color: green;
+
+}
+
+.speblue{
+	background-color: blue;
+
+}
+
+.blue{
+	background-color: aqua;
+
+}
+
+.palette{
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	margin: 0 20px;
+}

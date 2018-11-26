@@ -1,0 +1,345 @@
+#square
+{
+
+  position:absolute;
+  z-index: 100;
+}
+
+.champ{
+	height: 800px;
+	width: 800px;
+	position: relative;
+}
+
+td{
+	border:2px solid black;
+	width: 20px;
+	height: 20px;
+}
+
+
+table {
+	border-collapse: collapse;
+}
+
+td{
+  border : 2px solid black;
+  font-weight: normal;
+  padding: 30px;
+  position: relative;
+
+}
+
+
+p{
+	display: block;
+}
+
+
+
+.fond0{
+	background-image: url("grass.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+.fond1{
+	background-image: url("ocean.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+.fond2{
+	background-image: url("troll.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	z-index: 50;
+}
+
+
+.anim1{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top 0px left 0px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim2{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top 0px left -74px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim3{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top 0px left -148px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+
+.anim4{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top 0px left -224px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim5{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top 0px left -302px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim6{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top 0px left -376px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim7{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top 0px left -450px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+
+/* DEUXIEME LIGNE */
+
+.anim8{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -86px left 0px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim9{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -86px left -74px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim10{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -86px left -148px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+
+.anim11{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -86px left -224px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim12{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -86px left -302px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim13{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -86px left -376px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim14{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top 0px left -450px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+
+/* TROISIEME LIGNE */
+
+.anim15{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -168px left 0px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim16{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -168px left -74px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim17{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -168px left -148px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+
+.anim18{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -168px left -224px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim19{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -168px left -302px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim20{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -168px left -376px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim21{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -168px left -450px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+
+/** QUATRIEME LIGNE */
+
+
+.anim22{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -260px left 0px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim23{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -260px left -74px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim24{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -260px left -148px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+
+.anim25{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -260px left -224px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim26{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -260px left -302px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.anim27{
+	background-image:url('sprite.png');
+	width: 100%;
+	height: 83px;
+	width: 73px;
+	background-position: top -260px left -376px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}

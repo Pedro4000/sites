@@ -1,0 +1,57 @@
+td{
+	border:2px solid black;
+	width: 20px;
+	height: 20px;
+}
+
+
+table {
+	border-collapse: collapse;
+}
+
+td{
+  border : 2px solid black;
+  font-weight: normal;
+  padding: 30px;
+  position: relative;
+
+}
+
+
+p{
+	display: block;
+}
+
+
+
+.fond0{
+	background-image: url("grass.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+.fond1{
+	background-image: url("ocean.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+.fond2{
+	background-image: url("troll.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	z-index: 50;
+}
+
+
+#square{
+  width:58px;
+  height:58px;
+  background-color:green;
+  position:absolute;
+  z-index: 50;
+  border : 2px dashed black;
+}

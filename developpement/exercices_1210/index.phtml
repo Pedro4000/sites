@@ -1,0 +1,41 @@
+    <main>
+        <!-- Chargement du template PHTML spécifié par le programme PHP -->
+        <!-- Page d'accueil -->
+
+<?php if(array_key_exists('user', $_SESSION) == false) { ?>
+
+<a href="login.php"><h2><i class="fas fa-plug"></i></i> CONNECTION</h2></a>
+<a href="register.php"><i class="far fa-registered"></i>Nouveau membre ?</a>
+
+<?php } else { ?>
+
+<a href="logout.php"><h2><i class="fab fa-connectdevelop"></i>logout</h2></a>
+
+<?php } ?>
+
+
+<h2><i class="fa fa-home"></i> Accueil</h2>
+
+<!-- Liste des articles du blog -->
+<ul class="post-list">
+            
+
+
+<?php foreach ($articles as $article) { ?>
+
+            <li class="post">
+            <h3>
+                <i class="far fa-hand-point-right"></i></i>&nbsp;
+                <!-- Lien vers article de blog détaillé avec les commentaires -->
+                <a href="show_document.php?id=<?= $article['Id']?>" title="Consulter l'article">
+                    <?= $article['Title']?>! </a>
+            </h3>
+            <!-- Seul un extrait de l'article du blog est affiché -->
+            <article><?= $article['Content']?> &nbsp;[...]</article>
+            <small>
+                Rédigé par <?= $article['FirstName']?> <?= $article['LastName']?>   <?= $article['CreationTimestamp']?>  </small>
+        </li>
+        
+        <?php } ?>
+
+    </ul>    </main>

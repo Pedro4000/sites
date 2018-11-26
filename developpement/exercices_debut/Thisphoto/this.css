@@ -1,0 +1,21 @@
+
+
+.section-flex{
+	display: flex;
+}
+
+.img-width{
+	width: 30%
+	height:auto;
+	margin: 30px;
+	border : 15px solid white;
+}
+
+.survoler:hover{
+	border: 15px solid grey !important;
+}
+
+
+.clicker{
+	border: 15px solid green !important;
+}

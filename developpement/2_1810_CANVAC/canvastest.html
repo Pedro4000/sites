@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="canvas.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+</head>
+
+<style type="text/css">
+
+	canvas {
+		border: 1px solid black;
+	}
+    
+</style>
+
+<body class="container">
+
+	<h2><i class="fas fa-paint-brush"></i>Mon adroise Magique ;)</h2>
+        <canvas id="slate" class="slate" width="640" height="480"></canvas>
+        
+        <canvas id="slate2" class="slate" width="640" height="480"></canvas>
+
+		<canvas id="color-palette" class="color-palette hide" width="256" height="256"></canvas>
+	<br>
+    <div class="flex">
+	    <h3 class="outil-title">Outils</h3>
+	    <button id="tool-clear-canvas" title="Effacer"><i class="fas fa-eraser"></i></button>
+	   	<button id="tool-color-picker" title="Pipette"><i class="fas fa-eye-dropper"></i></button>
+   	</div>
+    <div class="flex">
+    	<h3 class="outil-title">Couleur</h3>
+		<button class="palette pen-color black" data-color="black">
+		<button class="palette pen-color maroon" data-color="#5C2121">
+		<button class="palette pen-color red" data-color="#B9121B">
+		<button class="palette pen-color yellow" data-color="#FFBD07">
+		<button class="palette pen-color green" data-color="#13B813">
+		<button class="palette pen-color seagreen" data-color="#029E9A">
+		<button class="palette pen-color blue" data-color="#0378A6">
+	</div>
+    <div class="flex">
+    	<h3 class="outil-title">Epaisseur</h3>
+    	<button id="bz" name="Fin" placeholder="Fin" data-thickness="1" class="thickness">fin
+    	<button id="bzz" name="Normal" placeholder="Normal" data-thickness="2" class="thickness">normal
+    	<button id="bzzzz" name="Epais" placeholder="Epais" data-thickness="3" class="thickness">epais
+    </div>
+
+    
+
+</body>
+    <script src="js/classes/ColorPalette.class.js"></script>
+    <script src="js/classes/Pen.class.js"></script>
+    <script src="js/classes/Slate.class.js"></script>	
+	<script type="text/javascript" src="js/classes/Program.class.js"></script>
+    <script src="js/classes/draw.js"></script>
+
+</html>

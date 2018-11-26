@@ -1,0 +1,23 @@
+
+table {
+	border-collapse: collapse;
+}
+
+td{
+  border : 2px solid black;
+  font-weight: normal;
+  padding: 10px;
+}
+
+td{
+	background-color: aqua;
+}
+
+p{
+	display: block;
+	background-color: olive;
+}
+
+.olive{
+	background-color: olive;
+}

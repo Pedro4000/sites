@@ -1,0 +1,18 @@
+.container{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+}
+
+.back{
+	background-color: #eeeeee;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+img{
+	float:left;
+}
+

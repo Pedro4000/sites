@@ -1,0 +1,46 @@
+<?php if(array_key_exists('user', $_SESSION) == false) { ?>
+
+<h2>HOPHOPHOP</h2>
+
+<?php } else { ?>
+
+
+    <main>
+        <!-- Chargement du template PHTML spécifié par le programme PHP -->
+        <h2><i class="fa fa-cogs"></i> Panneau d'administration</h2>
+
+<nav>
+    <a href="add_post.php">Rédiger un nouvel article</a>
+</nav>
+
+<table>
+    <caption>Liste des articles</caption>
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Article</th>
+            <th>Auteur</th>
+            <th>Catégorie</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+    <?php foreach ($articlesaussi as $article) { ?>
+                    <tr>
+                <td><a href="show_document.php?id=<?= $article['Id'] ?>" target="_blank">fgfggg</a></td>
+                <td><?= $article['Title'] ?></td>
+                <td><?= $article['FirstName'] ?><?= $article['LastName'] ?></td>
+                <td><?= $article['Name'] ?></td>
+                <td>
+                    <a class="edit" href="edit_post.php?id=<?= $article['Id'] ?>"><i class="fas fa-pencil-alt"></i></a>
+                    <a class="remove" href="delete_post.php?id=<?= $article['Id'] ?>"><i class="fas fa-times"></i></a>
+                </td>
+            </tr>
+
+    <?php } ?>
+
+            </tbody>
+</table>    </main>
+
+<?php } ?>
